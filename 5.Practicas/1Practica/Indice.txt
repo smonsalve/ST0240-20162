@@ -1,0 +1,32 @@
+Cantidad de Archivos: 5
+Estudiantes totales: 27
+
+Parcial1.csv
+Presentaron: 27 
+Total Puntos: 5 puntos
+Estudiantes que no presentaron: []
+porcentajes=[20,30,15,25,10]
+
+Parcial2.txt
+Presentaron: 25
+Total Puntos: 6
+Estudiantes que no presentaron: [6,14]
+porcentajes=[15,15,15,15,20,20]
+
+Practica1.csv
+Total Puntos: 15 
+Presentaron: 26 
+Estudiantes que no presentaron: [4]
+porcentajes=[7,7,7,7,7,7,7,7,7,7,5,5,5,5,10]
+
+Practica2.txt
+Total Puntos: 3 
+Presentaron: 26
+Estudiantes que no presentaron: [4]
+porcentaje = [33.3,33.3,33.3]
+
+PracticaFinal.ttt
+Total Puntos: 10
+Presentaron: 23
+Estudiantes que no presentaron: [4, 6, 18, 21]
+porcentaje = [10,10,10,10,10,10,10,10,5,10]

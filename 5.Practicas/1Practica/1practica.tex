@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}
+\usepackage{samstyle} 
+
+\newcommand{\NuevaPagina}[1]{\newpage
+\mbox{
+\begin{minipage}{3cm}
+    \includegraphics[width=3cm]{logo}
+\end{minipage}
+\begin{minipage}{14.7cm}
+  \begin{flushright}
+\hfill Página #1 \hfill Primer parcial-ST0240 \hfill Marzo
+\hfill Código: \rule{4cm}{0.3pt}
+  \end{flushright}
+\end{minipage}}\vspace{3pt}
+
+\rule{18cm}{1.5pt}}
+
+%%% COMIENZO DE DOCUMENTO %%%
+\begin{document}
+\pagestyle{empty}
+%%% Encabezado
+\mbox{
+    \begin{minipage}{5cm}
+        \includegraphics[width=5cm]{logo}
+    \end{minipage}
+    \begin{minipage}{13cm}
+    \begin{center}
+        \textsl{
+        \textbf{\Large Escuela de Ingenierías}\\
+        \textbf{\large Programación de Computadores - ST0240}\\
+        \textbf{\large Práctica 1 (Valor 20\%)}}
+    \end{center}
+    \end{minipage}
+}
+\begin{flushright}
+  \begin{minipage}{4.5cm}
+    Nota: \hrulefill
+  \end{minipage}
+\end{flushright}\vspace{-2mm}
+
+% Nombre: \rule{9cm}{0.3pt} \; Código: \hrulefill\vspace{6pt}
+
+Profesor: \underbar{\hspace{1cm} Sergio Monsalve
+\hspace{3.1cm}} \; \hfill Grupo: \underbar{\hspace{1cm} 063 } \;
+Marzo \underbar{\hspace{1cm}} de 2016 \rule{18cm}{1.5pt}
+%%% Fin del encabezado
+
+La siguiente es la descripción de la Practica 1 del curso de Programación de computadores, esta debe ser entregada máximo el día domingo 3 de Abril a las 11:59pm a través de la plataforma de EAFIT Interactiva.\\
+
+Suponga que usted es el profesor(a) de un curso de Programación de Computadores, tal curso tiene dos parciales del 15\%, dos practicas del 20\% y una práctica final del 30\%. \\
+
+Como entradas usted tiene un archivo <<indece.txt>> que contiene la cantidad de archivos, la cantidad de estudiantes, el nombre de cada archivo, la cantidad de estudiantes que presetaron esa actividad evaluativa, que estudiantes no presentaron tal evaluación, la cantidad de puntos que tenia cada actividad y los porcentajes de cada punto. Un archivo por cada evaluación donde esta el identificador de cada estudiante (entero de 1 a 27) y las notas por cada punto. 
+
+Se requiere que usted elabore un programa que cumpla con los siguientes requisitos: 
+
+\begin{enumerate}
+\item \textbf{(Valor 15\%)} Crear una interfaz de linea de comandos que permita: (Entrada y Salida por teclado)
+\end{enumerate}
+
+\begin{itemize}
+  \item Ingresar la cantidad de archivos a analizar.
+  \item Ingresar la cantidad de Estudiantes.
+  \item Ingresar el nombre de los archivos. 
+\end{itemize}
+\vspace{0.5cm}
+
+\begin{enumerate}[resume]
+\item \textbf{(Valor 10\%)} Controlar los siguientes casos mediante excepciones:
+\end{enumerate}
+
+\begin{itemize}
+  \item En caso de que no coincida alguno de los nombres, pedirle al usuario que lo ingrese nuevamente.
+  \item Verificar que la suma de los porcentajes de ningún parcial exceda el porcentaje máximo (100).
+  \item verificar que no haya ningún archivo vacío.
+  \item verificar que no se hacen divisiones por 0.
+\end{itemize}
+\vspace{0.5cm}
+
+\begin{enumerate}[resume]
+\item \textbf{(Valor 20\%)} Manipulación datos:
+\end{enumerate}
+
+\begin{itemize}
+  \item Realizar un arreglo con las notas de cada uno de los estudiantes
+  \item Realizar un arreglo por estudiante con las notas de cada evaluación
+\end{itemize}
+ \vspace{0.5cm}
+
+\begin{enumerate}[resume] 
+\item \textbf{(Valor 20\%)}Procesamiento
+\end{enumerate}
+
+\begin{itemize}
+  \item Encuentre el Promedio de las notas de cada estudiante.
+  \item Encuentre la desviación típica para cada estudiante.
+  \item Encuentre la Nota promedio para cada evaluación
+  \item Encuentre la desviación típica por evaluación.
+\end{itemize}
+\vspace{0.5cm}
+
+\begin{enumerate}[resume]
+\item \textbf{(Valor 15\%)} Manejo de bibliotecas: Matplotlib
+\end{enumerate}
+
+
+\begin{itemize}
+  \item Graficar el Progreso del Estudiante Dado (notas de las evaluaciones)
+  \item Graficar el progreso de todos los estudiantes (Gráfica de lineas con linea por cada estudiante)
+\end{itemize}
+\vspace{0.5cm}
+
+\begin{enumerate}[resume]
+\item \textbf{(Valor 20\%)} Interpretación y Reportes
+\end{enumerate}
+
+
+\begin{itemize}
+  \item Determinar cuáles estudiantes han mejorado su rendimiento y mostrarlo mediante una gráfica (solo estudiantes que siempre mejoraron su nota)
+\end{itemize}
+
+
+\section{Apéndice}
+
+\subsection{Indice.txt} % (fold)
+\label{sub:indice_txt}
+
+% subsection indice_txt (end)
+\lstinputlisting{Indice.txt}
+
+\newpage
+
+\subsection{Parcial1.txt} % (fold)
+\label{sub:parcial1_txt}
+
+\lstinputlisting{Solucion/Parcial2.txt}
+% subsection parcial1_txt (end)
+\end{document}

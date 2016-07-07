@@ -1,0 +1,8 @@
+N
+palabra1
+palabra2
+palabra3
+.
+.
+.
+palabraN

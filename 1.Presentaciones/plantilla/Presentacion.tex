@@ -1,0 +1,78 @@
+\documentclass{beamer}
+
+\title[Crisis] % (optional, only for long titles)
+      {The Economics of Financial Crisis}
+      \subtitle{Evidence from India}
+      \author[Author, Anders] % (optional, for multiple authors)
+             {F.~Author\inst{1} \and S.~Anders\inst{2}}
+             \institute[Universities Here and There] % (optional)
+                       {
+                         \inst{1}%
+                         Institute of Computer Science\\
+                         University Here
+                         \and
+                         \inst{2}%
+                         Institute of Theoretical Philosophy\\
+                         University There
+                       }
+                       \date[KPT 2004] % (optional)
+                            {Conference on Presentation Techniques, 2004}
+                            \subject{Computer Science}
+
+
+
+                            
+\begin{document}
+                            
+\frame{\titlepage}
+
+
+\begin{frame}
+  \frametitle{This is the first slide}
+  %Content goes here
+\end{frame}
+\begin{frame}
+  \frametitle{This is the second slide}
+  \framesubtitle{A bit more information about this}
+  %More content goes here
+\end{frame}
+
+
+\begin{frame}{Example of columns 1}
+  \begin{columns}[c] % the ``c'' option specifies center vertical alignment
+    \column{.5\textwidth} % column designated by a command
+    Contents of the first column
+    \column{.5\textwidth}
+    Contents split \\ into two lines
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Example of columns 2}
+  \begin{columns}[T] % contents are top vertically aligned
+    \begin{column}[T]{5cm} % each column can also be its own environment
+      Contents of first column \\ split into two lines
+    \end{column}
+    \begin{column}[T]{5cm} % alternative top-align that's better for graphics
+      % \includegraphics[height=3cm]{graphic.png}
+      
+    \end{column}
+  \end{columns}
+  \end{frame}
+
+\begin{frame}
+
+  \begin{block}{This is a Block}
+    This is important information
+  \end{block}
+
+  \begin{alertblock}{This is an Alert block}
+    This is an important alert
+  \end{alertblock}
+
+  \begin{exampleblock}{This is an Example block}
+    This is an example
+  \end{exampleblock}
+
+  \end{frame}
+
+\end{document}

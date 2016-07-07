@@ -1,0 +1,16 @@
+Cantidad de Archivos: 2
+Estudiantes totales: 6
+
+Ev1.csv
+Porcentaje de la evaluacion: 40
+Presentaron: 6
+Total Puntos: 3
+Estudiantes que no presentaron: [] 
+porcentaje de los puntos: [20,30,50]
+
+Eva2.txt
+Porcentaje de la evaluacion: 60
+Presentaron: 5
+Total Puntos: 4
+Estudiantes que no presentaron: [2] 
+porcentaje de los puntos: [25,25,30,20]

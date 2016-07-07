@@ -1,0 +1,97 @@
+\documentclass[12pt]{beamer}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{pgfpages}
+\usepackage{graphics}
+\usepackage{graphicx}
+
+\mode<presentation>{
+
+  \usebackgroundtemplate{
+    \includegraphics[width=\paperwidth,height=\paperheight]{
+     imgs/backgroundtemplate.jpg
+    }
+  } 
+  \setbeamercovered{transparent}
+  \usefonttheme{structurebold}
+  \setbeamersize{sidebar width left=1cm}
+  \setbeamersize{sidebar width right=0.5cm}
+  % \setbeamersize{description width left=0.5cm}
+  % \setbeamersize{description width right=0.5cm}
+  % \setbeamertemplate{blocks}[rounded][shadow=true]
+  \setbeamercolor{normal text}{fg=teal} 
+  % \useinnertheme{rounded}
+  % \useoutertheme{default}
+
+  \setbeamertemplate{frametitle}{
+    \begin{centering}
+      \color{blue}
+      \textbf{\insertframetitle}
+      \par
+    \end{centering}
+  }
+
+  \AtBeginPart{
+    \begin{frame}
+      \partpage
+    \end{frame}
+  }
+
+  \AtBeginSection[]{
+    \begin{frame}<beamer>
+      \frametitle{Contenido}
+      \tableofcontents[currentsubsection]
+    \end{frame}
+  }
+
+  \setbeamertemplate{headline}{
+    \begin{beamercolorbox}[default theme]{section in head/foot}
+      \vskip40pt\vskip0pt
+    \end{beamercolorbox}%
+  }
+}
+
+\title[SISE]{SISE}
+\subtitle{Semillero Investigación Sistemas Embebidos}
+\author[]{Sergio Andrés Monsalve--Castañeda \texttt{<smonsal3@eafit.edu.co>}}
+\institute[Universidad EAFIT]{Universidad EAFIT}
+
+
+\date[Universidad EAFIT]{2013} 
+\subject{SISE}
+\keywords{Sistemas, Embebidos}
+
+\usetheme{Warsaw}
+
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>
+    \frametitle{Contenido}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+  \begin{figure}[htp]
+  	\centering
+    test
+  	%\includegraphics[width=0.38\textwidth]{imgs/logo_eafit}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\mode<all>
+\input{partes/intro}
+\input{partes/Proyectos}
+\input{partes/Admin}
+\mode*
+
+\input{partes/Referencias} 
+
+\end{document}

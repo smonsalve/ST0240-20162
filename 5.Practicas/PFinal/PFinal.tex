@@ -1,0 +1,133 @@
+\documentclass[12pt]{article}
+\usepackage{samstyle} 
+
+\newcommand{\NuevaPagina}[1]{\newpage
+\mbox{
+\begin{minipage}{3cm}
+    \includegraphics[width=3cm]{logo}
+\end{minipage}
+\begin{minipage}{14.7cm}
+  \begin{flushright}
+\hfill Página #1 \hfill Primer parcial-ST0240 \hfill Marzo
+\hfill Código: \rule{4cm}{0.3pt}
+  \end{flushright}
+\end{minipage}}\vspace{3pt}
+
+\rule{18cm}{1.5pt}}
+
+%%% COMIENZO DE DOCUMENTO %%%
+\begin{document}
+\pagestyle{empty}
+%%% Encabezado
+\mbox{
+    \begin{minipage}{5cm}
+        \includegraphics[width=5cm]{logo}
+    \end{minipage}
+    \begin{minipage}{13cm}
+    \begin{center}
+        \textsl{
+        \textbf{\Large Escuela de Ingenierías}\\
+        \textbf{\large Programación de Computadores - ST0240}\\
+        \textbf{\large Práctica Final (Valor 20\%)}}
+    \end{center}
+    \end{minipage}
+}
+\begin{flushright}
+  \begin{minipage}{4.5cm}
+    Nota: \hrulefill
+  \end{minipage}
+\end{flushright}\vspace{-2mm}
+
+% Nombre: \rule{9cm}{0.3pt} \; Código: \hrulefill\vspace{6pt}
+
+Profesor: \underbar{\hspace{1cm} Sergio Monsalve
+\hspace{3.1cm}} \; \hfill Grupo: \underbar{\hspace{1cm} 063 } \;
+Mayo \underbar{\hspace{1cm}} de 2016 \rule{18cm}{1.5pt}
+%%% Fin del encabezado
+
+
+La siguiente es la descripción de la Practica Final del curso de Programación de computadores. La fecha de entrega es el día domingo 5 de Junio a las 11:59pm a través de la plataforma de EAFIT Interactiva.\\
+
+Los empleados de cierta empresas registran la entrada y salida del trabajo de manera electrónica, cada empleado tiene un código para poder ser identificado y saber el número de horas que ha trabajado. La empresa tiene políticas de compensación para los empleados que trabajan horas extras, y para ello tiene horarios de trabajo.\\
+
+La empresa desea saber cual es la cantidad de horas y el promedio de horas que los empleados están trabajando al mes, tambien el número de horas extras que están trabajando los empleados y las horas nocturnas. Para ello tiene las siguientes políticas en cuanto a los horarios:\\
+
+La entrada de Lunes a Sábado es después de las 6 am.\\
+
+Horas Extra: \\
+\begin{itemize}
+  \item  Si alguien trabaja después de las 4 pm los lunes se cuentan estas como horas extras, 
+  \item  De martes a viernes después de las 3 pm se contarán como extras. 
+  \item  Los sábados estas serán contadas después de la 1:45 pm. 
+  \item  Los domingos son especiales, ya que si se trabaja ese día, las horas laboradas son todas horas extras. 
+\end{itemize}
+
+Horas Nocturnas: \\
+
+\begin{itemize}
+  \item También se cuenta con otro de horario especial, las horas laboradas entre las 10 pm y las 6 am serán consideradas como nocturnas.
+\end{itemize}
+
+\section*{Entrada}
+
+Una muestra del formato del archivo de entrada es el siguiente:
+
+\begin{itemize}
+  \item Los valores están divididos por comas(",") y por fin de linea("{\textbackslash}n"):
+  \item El primer valor, puede ser 1, 2 o 3, si es 1 es la hora de entrada y los valores 2 y 3 marcan la hora de salida.
+  \item El siguiente parámetro es el código del empleado.
+  \item El siguiente parámetro es el área donde se trabaja dentro de la empresa.
+  \item El siguiente parámetro es la hora y el septimo es el minuto.
+  \item El siguiente valor es el mes, luego es el día y el ultimo es el año.
+\end{itemize}
+
+\section*{Salida}
+
+Se requiere que usted elabore un programa en VBA para excel, que cumpla con los siguientes requisitos: 
+
+\begin{enumerate}
+\item \textbf{(Valor 25\%)} Calcule las horas extra trabajadas:
+\end{enumerate}
+
+\begin{itemize}
+  \item Cantidad de horas extras por empleado
+  \item Cantidad de horas extras trabajadas de todos los empleados
+  \item Promedio de horas extras trabajadas por los empleados
+\end{itemize}
+\vspace{0.5cm}
+
+\begin{enumerate}[resume] 
+\item \textbf{(Valor 25\%)} Calcule las horas nocturnas trabajadas:
+\end{enumerate}
+
+\begin{itemize}
+  \item Cantidad de horas nocturnas por empleado
+  \item Cantidad de horas nocturnas trabajadas de todos los empleados
+  \item Promedio de horas nocturnas trabajadas por los empleados
+\end{itemize}
+
+\vspace{0.5cm}
+
+\begin{enumerate}[resume]
+\item \textbf{(Valor 25\%)} Calcule las horas totales trabajadas:
+\end{enumerate}
+
+\begin{itemize}
+  \item Cantidad de horas trabajadas por empleado
+  \item Cantidad de horas trabajadas de todos los empleados
+  \item Promedio de horas trabajadas por los empleados
+\end{itemize}
+
+\vspace{0.5cm}
+
+\begin{enumerate}[resume]
+\item \textbf{(Valor 25\%)} Visualización, interpretación y reportes: genere las siguientes gráficas:
+\end{enumerate}
+
+\begin{itemize}
+  \item  Una gráfica para las horas extras 
+  \item  Una gráfica para las horas nocturnas 
+  \item  Una gráfica para el total de horas trabajadas
+\end{itemize}
+
+\end{document}

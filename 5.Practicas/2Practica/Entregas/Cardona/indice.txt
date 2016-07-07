@@ -1,0 +1,23 @@
+Cantidad de archivos: 3
+Estudiantes totales: 15
+
+Parcial1.csv
+Porcentaje evaluacion: 30
+Presentaron: 15
+Total puntos: 4
+Estudiantes no presentaron: []
+Porcentaje puntos: [25, 25, 25, 25]
+
+Parcial2.txt
+Porcentaje evaluacion: 30
+Presentaron: 13
+Total puntos: 4
+Estudiantes no presentaron: [4, 5]
+Porcentaje puntos: [20, 20, 30, 30]
+
+Parcial3.csv
+Porcentaje evaluacion: 40
+Presentaron: 14
+Total puntos: 4
+Estudiantes no presentaron: [12]
+Porcentaje puntos: [25, 25, 25, 25]

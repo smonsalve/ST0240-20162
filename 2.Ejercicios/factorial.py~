@@ -1,0 +1,10 @@
+
+
+def factorial(n):
+    cont = 1
+    resultado = 1
+    while(cont < n):
+        cont += 1
+        resultadoo *= cont
+
+print factorial(7)
