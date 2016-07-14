@@ -1,6 +1,18 @@
-# Programación de computadores 2016-1
+# Programación de computadores
+ST0240 - 
+2016-2
 
-[Última presentación](https://docs.google.com/presentation/d/1ENvqi0Q0TH7tH2vHVyHFCdWJwx7DlJsqD2H9a12KzSc/edit?usp=sharing)
+Programa de la materia
+
+Presentación
+talleres
+Videos
+Evaluaciones
+
+
+[Última presentación]
+
+(https://docs.google.com/presentation/d/1ENvqi0Q0TH7tH2vHVyHFCdWJwx7DlJsqD2H9a12KzSc/edit?usp=sharing)
 
 # Enlaces Interesantes
 
