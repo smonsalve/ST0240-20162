@@ -12,7 +12,7 @@ comp:
 	$(BUILDTEX)
 
 open: clean
-	open $(PROJECT).pdf
+	evince $(PROJECT).pdf &
 
 clean:
 	rm -f *.dvi *.log *.bak *.aux *.bbl *.blg *.idx *.ps *.eps *.toc *.out *~	
