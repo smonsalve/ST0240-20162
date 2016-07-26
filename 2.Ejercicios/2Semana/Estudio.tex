@@ -1,0 +1,63 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{samstyle}
+
+\title{Daño en base de datos}
+        
+\author{
+	Profesor\\
+	Sergio Andres Monsalve Castañeda\\
+	smonsal3@eafit.edu.co
+}
+
+\begin{document}
+ 
+\pagestyle{fancyplain}
+\fancyhf{}
+\headheight=20pt %para cambiar el tamaño del encabezado
+\renewcommand{\headrulewidth}{0pt} %espesor del encabezado
+
+% \lhead %la "L" indica a la izquierda
+% {
+% }
+
+\fancyfoot[c]{\thepage}
+
+\maketitle
+
+\begin{minipage}{3cm}
+% \includegraphics[width=15cm]{aux/SamCanny.jpg}
+\end{minipage}
+
+
+\section{Descripción}
+
+Resulta que en una base de datos de la universidad se daño una de las columnas de la tabla que contenia los estudiantes de un grupo. En tal tabla había 3 estudiantes con el mismo nombre y se borro tal nombre.
+
+\section{Objetivo}
+
+Nuestro objetivo es recuperar la integridad de la base de datos.
+
+\section{Entrada}
+
+Cuando la universidad nos diga cual fue el nombre que fue borrado nuestro programa deberá leer tal nombre como entrada.
+
+\section{Salida}
+
+Se espera que su programa entregue como salida (Resultado) las siguientes lineas:
+
+Nombre + espacio +  Apellido1 + espacio + codigo1 \\
+Nombre + espacio +  Apellido2 + espacio + codigo2 \\
+Nombre + espacio +  Apellido3 + espacio + codigo3 \\
+
+\section{Ejemplo}
+\subsection{Entrada}
+\lstinputlisting{db.in}
+\subsection{Salida}
+\lstinputlisting{db.ot}
+
+%\bibliographystyle{plainnat}
+%\bibliography{refs}
+
+\end{document}
+
+

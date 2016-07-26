@@ -1,15 +1,20 @@
-FILENAME=Presentacion
+PROJECT=Presentacion
+TEX=pdflatex
+BIBTEX=bibtex
+BUILDTEX=$(TEX) $(PROJECT).tex
 
-all: $(FILENAME).pdf clean open
+all: clean comp open clean
 
-$(FILENAME).pdf: $(FILENAME).tex
-	pdflatex $(FILENAME).tex
-	pdflatex $(FILENAME).tex
-	bibtex $(FILENAME).aux 
-	pdflatex $(FILENAME).tex
+comp:
+	$(BUILDTEX)
+	#	$(BIBTEX) $(PROJECT)
+	$(BUILDTEX)
+	$(BUILDTEX)
+
+open: clean
+	evince $(PROJECT).pdf &
 
 clean:
-	rm -f *.aux	*.bbl	*.blg	*.log	*.out	*.toc	*.lof	*.lot	*.nav	*.snm
+	rm -f *.dvi *.log *.bak *.aux *.bbl *.blg *.idx *.ps *.eps *.toc *.out *~ *.nav *.snm
 
-open:
-	open $(FILENAME).pdf
+
