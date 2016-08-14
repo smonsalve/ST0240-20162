@@ -1,4 +1,4 @@
-PROJECT=Presentacion
+PROJECT=presentacion
 TEX=pdflatex
 BIBTEX=bibtex
 BUILDTEX=$(TEX) $(PROJECT).tex
@@ -16,5 +16,3 @@ open: clean
 
 clean:
 	rm -f *.dvi *.log *.bak *.aux *.bbl *.blg *.idx *.ps *.eps *.toc *.out *~ *.nav *.snm
-
-

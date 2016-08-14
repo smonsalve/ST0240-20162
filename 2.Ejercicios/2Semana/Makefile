@@ -1,4 +1,4 @@
-PROJECT=Estudio
+PROJECT=study
 TEX=pdflatex
 BIBTEX=bibtex
 BUILDTEX=$(TEX) $(PROJECT).tex

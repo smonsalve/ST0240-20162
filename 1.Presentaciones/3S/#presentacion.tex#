@@ -1,0 +1,243 @@
+\documentclass[xcolor=svgnames]{beamer} 
+\usefonttheme[onlymath]{serif}
+\usepackage{tcolorbox}
+\usepackage{multimedia}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{mathtools}  % amsmath improved
+%\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cancel}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{algorithm2e}
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+\usepackage{xcolor}
+%\usepackage{pgfplots}
+\usepackage{booktabs}   % Fancy table borders.
+
+\newcommand{\grn}[1]{\textcolor{Green}{#1}}
+\newcommand{\red}[1]{\textcolor{Red}{#1}}
+\newcommand{\ple}[1]{\textcolor{Purple}{#1}}
+\newcommand{\ong}[1]{\textcolor{DarkGoldenrod}{#1}}
+
+\usetheme{Warsaw}
+
+\definecolor{eafitColor}{rgb}{0.03515625,0.30078125,0.55078125}
+\definecolor{eafitColor2}{rgb}{ 0.30859375,  0.5234375 ,  0.6953125}
+\definecolor{mygreen}{rgb}{0.0 ,0.6, 0.0}
+
+\usecolortheme[named=eafitColor]{structure} 
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=eafitColor}
+\setbeamercolor*{palette quaternary}{fg=white,bg=eafitColor2!90!eafitColor2}
+
+\defbeamertemplate*{footline}{shadow theme}
+{%
+  \leavevmode%
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fil,rightskip=.3cm]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\hfill\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    %\usebeamerfont{title in head/foot}\insertshorttitle\hfill\insertframenumber\,/\,\inserttotalframenumber%
+    \usebeamerfont{title in head/foot}\insertshorttitle\hfill\insertframenumber\,/\,\inserttotalframenumber%
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+%\setbeamertemplate{footline}{\hfill\insertframenumber/\inserttotalframenumber} 
+
+\everymath{\color{blue}}
+\everydisplay{\color{blue}}
+
+\newcommand{\highlight}[1]{%
+  \colorbox{yellow!50}{$\displaystyle#1$}}
+  
+\newcommand{\mathColor}[1]{{\color{blue}#1}}
+\newcommand{\emphRed}[1]{{\color{red}#1}}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%                           Example environment
+
+ \newtheoremstyle{example}{\topsep}{\topsep}%
+     {}%         Body font
+     {}%         Indent amount (empty = no indent, \parindent = para indent)
+     {\bfseries}% Thm head font
+     {}%        Punctuation after thm head
+     {\newline}%     Space after thm head (\newline = linebreak)
+     {\thmname{#1}\thmnumber{ #2}\thmnote{ #3}}%         Thm head spec
+
+   \theoremstyle{example}
+%   \newtheorem{example}{Example}[chapter]
+
+
+%\AtBeginSection{\frame{\sectionpage}}
+%\AtBeginSubsection{\frame{\subsectionpage}}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\graphicspath{{../imagenes/},{figures2/}}
+
+\logo{\includegraphics[width=1.5cm]{../aux/LogoAzul.png}\vspace{-.2cm}} 
+
+
+\title[ST0240-063]{Programación de Computadores }
+\subtitle{Semana 3: Viernes 5 de Agosto de 2016}
+\author{
+  Sergio Monsalve \\
+  smonsal3@eafit.edu.co
+}
+\institute{
+  Departamento de Informática y Sistemas \\
+  Universidad EAFIT, Medellin, Colombia\\\vspace{0.5cm}
+}
+\date{Julio, 2016}
+
+\makeatletter
+    \newenvironment{withoutheadline}{
+        \setbeamertemplate{headline}[default]
+        \def\beamer@entrycode{\vspace*{-\headheight}}
+    }{}
+\makeatother
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Comment this line to remore the table of contents on top of the slide
+
+%\setbeamertemplate{headline}{}
+
+\beamertemplatenavigationsymbolsempty
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{document}
+
+\setbeamertemplate{background canvas}{
+%	    \includegraphics[width=1.1\textwidth]{region}
+}
+	
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+\setbeamertemplate{background canvas}{}
+%\maketitle 
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%\section*{Outline}
+\begin{withoutheadline}
+  \begin{frame}
+    \setcounter{tocdepth}{1}
+    \frametitle{Contenido}     
+    \tableofcontents
+  \end{frame}
+\end{withoutheadline}
+
+
+\section{Introducción}
+
+\subsection{Pre - clase}
+
+\begin{frame}
+  \frametitle{Pendientes}
+  \begin{itemize}
+  \item Quiz 1\%
+  \item Dudas y Preguntas
+  \item Libro: Revisión de Capítulos 1,2,3,4
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Clase Anterior}
+  \begin{itemize}
+    \item Expresiones
+    \item Condiciones
+    \item Ciclos
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Revisión Capitulos 1,2,3,4 del libro}
+  \begin{itemize}
+  \item Cap1
+  \item Cap2
+  \item Cap3
+  \item Cap4
+  \end{itemize}
+\end{frame}
+
+\section{Contenido}
+
+\begin{frame}
+  \frametitle{Para hoy...}
+\begin{itemize}
+\item Condiciones: If,If-else, switch
+\item Ciclos: while, do-while, for, for.each
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{test}
+  \lstinputlisting[language=Python]{Prueba.py}
+\end{frame}
+
+\section{Cierre}
+\subsection{post-clase}
+
+\begin{frame}
+  \frametitle{Pendientes para la próxima clase}
+  \begin{itemize}
+  \item{Libro guia: Capitulo }
+    \item{SPOJ: problema de estudio}
+  \item{Quiz 3\%}
+  \item{Taller 5\%}
+  \end{itemize}
+\end{frame}
+
+\subsection{Enlaces}
+\begin{frame}
+  \frametitle{Recursos Adicionales}
+  \begin{itemize}
+  \item https://coderbyte.com/course/learn-python-in-one-week
+  \end{itemize}
+\end{frame}
+
+%% \begin{frame}
+%%   \frametitle{Pendientes para la próxima clase}
+%%   \begin{itemize}
+%%   \item{Libro guia: Capitulos }
+%%     \item{SPOJ: problema }
+%%   \item{Quiz 1\%}
+%%   \item{Evaluación? No, pero preparación para la proxima!}
+%%   \end{itemize}
+%% \end{frame}
+
+\subsection{Referencias}
+
+\begin{thebibliography}{9}
+\bibitem{farrell}
+  Joyce Farrell,
+ \emph{Introducción a la programación: lógica y diseño},
+ Thomson Learning,2001.
+
+\bibitem{Gries}
+  Gries, Paul and Campbell, Jennifer and Montojo, Jason,
+  \emph{Practical Programming: An Introduction to Computer Science Using Python 3},
+  Pragmatic Bookshelf
+  2013
+ 
+\end{thebibliography}
+
+\end{document}
+
+%\begin{frame}
+%  \frametitle{}
+%\end{frame}
+ 
+%\begin{frame}
+%  \frametitle{}
+% \begin{itemize}
+% \item
+% \end{itemize}
+%\end{frame}

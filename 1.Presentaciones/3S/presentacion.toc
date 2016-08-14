@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Pre - clase}{3}{0}{1}
+\beamer@sectionintoc {2}{Contenido}{6}{0}{2}
+\beamer@sectionintoc {3}{Cierre}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{post-clase}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Enlaces}{9}{0}{3}
+\beamer@subsectionintoc {3}{3}{Referencias}{11}{0}{3}
