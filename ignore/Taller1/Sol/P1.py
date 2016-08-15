@@ -1,18 +1,27 @@
 t = int(raw_input())
 
-def invCont (lista):
-    cont = 0
-    for i in range(len(lista)-1):
-        for j in range(i+1,len(lista)):
-            if lista[i]>lista[j]: cont+=1 
-    return cont
-
 for i in range(t):
-    nada = raw_input()
-    n = int(raw_input())
-    lista = []
-    for j in range(n):
-        elemento = int(raw_input())
-        lista.append(elemento)
+    count = color = 0
+    a = []
+    for j in range(6):
+        a.append(int(raw_input()))
+    
+#    print a
+    if(a[0]+a[1]+a[2] > a[3]+a[4]+a[5]):
+        count = 1
 
-    print invCont(lista)
+    if(a[0]>a[3]): color = 1
+    elif(a[0]==a[3]):
+         if(a[1] > a[4]): color = 1 
+         elif(a[1] == a[2]):
+             if(a[2]>a[5]): color=  1
+
+
+    if count and color:
+        print "Ambos"
+    elif count :
+        print "Cantidad"
+    elif color:
+        print "Color"
+    else: 
+        print "Ninguno"
