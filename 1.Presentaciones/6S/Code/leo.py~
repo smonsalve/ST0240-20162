@@ -1,0 +1,9 @@
+archivo1 = "Entrada1.in"
+archivo2 = "Entrada2.in"
+archivo3 = "Entrada3.in"
+
+
+f = open(archivo1, "rb")
+
+for item in f:
+    print item.rstrip()

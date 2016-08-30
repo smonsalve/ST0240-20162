@@ -1,0 +1,8 @@
+
+import random
+
+lim_sup = int(raw_input())
+
+for i in range(lim_sup):
+    print random.randint(10000)
+

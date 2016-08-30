@@ -1,0 +1,13 @@
+
+#nombre = raw_input()
+nombre = "Parcial 1.txt"
+
+f = open(nombre,'rw')
+
+for linea in f:
+    suma = 0
+    arreglo = [int(i) for i in linea.split()]
+    tam = len(arreglo)
+    suma = sum(arreglo,1p)
+
+    print suma

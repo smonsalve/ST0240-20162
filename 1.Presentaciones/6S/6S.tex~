@@ -1,0 +1,90 @@
+\documentclass[12pt]{beamer}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{pgfpages}
+\usepackage{graphics}
+\usepackage{graphicx}
+
+\mode<presentation>{
+
+  % \usebackgroundtemplate{
+  %   \includegraphics[width=\paperwidth,height=\paperheight]{
+  %    imgs/backgroundtemplate.jpg
+  %   }
+  % } 
+  % \setbeamercovered{transparent}
+  %\usefonttheme{structurebold}
+  %\setbeamersize{sidebar width left=1cm}
+  %\setbeamersize{sidebar width right=0.5cm}
+  % \setbeamersize{description width left=0.5cm}
+  % \setbeamersize{description width right=0.5cm}
+  % \setbeamertemplate{blocks}[rounded][shadow=true]
+  %\setbeamercolor{normal text}{fg=teal} 
+  % \useinnertheme{rounded}
+  % \useoutertheme{default}
+
+  % \setbeamertemplate{frametitle}{
+  %   \begin{centering}
+  %     \color{blue}
+  %     \textbf{\insertframetitle}
+  %     \par
+  %   \end{centering}
+  % }
+
+  \usetheme{Warsaw}
+
+  % \AtBeginPart{
+  %   \begin{frame}
+  %     \partpage
+  %   \end{frame}
+  % }
+
+  % \AtBeginSection[]{
+  %   \begin{frame}<beamer>
+  %     \frametitle{Contenido}
+  %     \tableofcontents[currentsubsection]
+  %   \end{frame}
+  % }
+
+  % \setbeamertemplate{headline}{
+  %   \begin{beamercolorbox}[default theme]{section in head/foot}
+  %     \vskip40pt\vskip0pt
+  %   \end{beamercolorbox}%
+}
+
+\title[ST0240-063]{Programación de Computadores}
+\subtitle{Semana 5}
+\author[]{Sergio Andrés Monsalve Castañeda \texttt{<smonsal3@eafit.edu.co>}}
+\institute[Universidad EAFIT]{Universidad EAFIT}
+\date{\today}
+\subject{Programación de Computadores}
+\keywords{Programación, Ingeniería}
+\usetheme{Warsaw}
+
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>
+    \frametitle{Contenido}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\mode*
+
+\mode<all>
+
+\input{partes/intro}
+%\input{partes/Referencias} 
+
+\bibliography{Referencias}
+\bibliographystyle{IEEEtran}   
+
+\end{document}

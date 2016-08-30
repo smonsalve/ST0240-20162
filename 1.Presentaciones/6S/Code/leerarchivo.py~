@@ -1,0 +1,12 @@
+
+#nombre = raw_input()
+nombre = "Parcial 1.txt"
+
+f = open(nombre,'rw')
+
+for linea in f:
+    suma = 0
+    for i in linea.split():
+        suma += int(i) 
+
+    print suma
