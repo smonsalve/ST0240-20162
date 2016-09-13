@@ -1,0 +1,47 @@
+e\section{Introducc}
+
+\newpage
+
+\section{Entrada}
+
+
+%\lstinputlisting[caption=My caption]{sourcefile.lang}
+\lstinputlisting[caption=Nombres.txt]{../input/Nombres.txt}
+\lstinputlisting[caption=000000000001.txt]{../input/000000000001.txt}
+
+\newpage
+
+\section{Salida}
+        
+Su objetivo es calcular todas las notas y dado un identificador entregar la nota que saco tal persona en la actividad evaluativa.\\
+
+Su programa debe generar un archivo de notas llamado \textbf{Notas.ot} con el siguiente formato:
+
+\lstinputlisting[caption=Notas.ot]{../input/Notas.ot}
+
+
+\newpage
+
+\section{Rubrica Evaluativa}
+
+
+\begin{tabular}{|l|c|}
+  \hline
+  \textbf{Descripción} & \textbf{Porcentaje}\\
+  \hline
+  Leer Archivo de nombres de archivo (indice) & 15\%\\
+  \hline
+  Leer Archivo de notas de cada estudiante  & 15\%\\
+  \hline
+  Manejar correctamente una excepción en caso de que un arhivo no tenga el formato adecuado & 15\% \\
+  \hline
+  Manejar correctamente una excepción en caso de que un archivo no exista & 15\%\\
+  \hline
+  Calcular las notas de todos los estudiantes (indice) & 15\%\\
+  \hline
+  Dado un identificador retornar la nota de ese estudiante & 15\%\\
+  \hline
+  Generar un archivo con las notas de cada estudiante & 10\%\\
+  \hline
+\end{tabular}
+

@@ -1,0 +1,27 @@
+
+def basicSearch(lista, item):
+    encontre = False
+    for elemento in lista:
+        #print item, elemento
+        if item == elemento:
+            print "HOLAHOLAHOA"
+            encontre = True
+    return encontre
+
+
+def buscar(lista, tosearch):
+    print "esta {} en {}:{}".format(tosearch,lista,(tosearch in lista)) 
+    if (basicSearch(lista,tosearch)):
+        print ("encontre a {} en {}").format(tosearch,lista)
+    else:
+        print (("NO encontre a {} en {}").format(tosearch,lista)).upper()
+
+
+a = [11,2,4,52,35,45,23,51,67,21,3,16,5,7,12,6]
+
+lista = sorted(a)
+
+tosearch = 15
+for i in range(10):
+    buscar(lista,i)
+
